@@ -1,10 +1,9 @@
-from openai import OpenAI
-import json
-import streamlit as st
-from rewrite import prompts
-from utils import fetch_data_from_backend
-
 def show_chat_page():
+    from openai import OpenAI
+    import json
+    import streamlit as st
+    from rewrite import prompts
+    from utils import fetch_data_from_backend
     st.title("BlueSky Email Rewriter")
     prospect_id = st.query_params.get("prospect_id")
     if prospect_id:
