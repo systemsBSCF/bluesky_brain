@@ -1,6 +1,6 @@
+from openai import OpenAI
 import json
 import streamlit as st
-from openai import OpenAI
 from rewrite import prompts
 from utils import fetch_data_from_backend
 
