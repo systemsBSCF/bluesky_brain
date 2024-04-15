@@ -4,7 +4,7 @@ def show_chat_page():
     import streamlit as st
     from rewrite import prompts
     from utils import fetch_data_from_backend
-    st.title("BlueSky Email Rewriter")
+    st.title("BlueSky AI Rewriter")
     prospect_id = st.query_params.get("prospect_id")
     if prospect_id:
         data = fetch_data_from_backend(prospect_id)
